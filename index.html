@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="node_modules/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="country">
+      الرياض
+    </div>
+
+    <div class="date">
+      الجمعه - Sep 2024 10
+    </div>
+    <div class="Prayers">
+      <div class="fajr">
+        <div class="name">الفجر</div>
+        <div class="time" id="fajr-time">02:00</div>
+      </div>
+      <div class="shrouk">
+        <div class="name">الشروق</div>
+        <div class="time" id="shrouk-time">02:00</div>
+      </div>
+      <div class="dhuhr">
+        <div class="name">الظهر</div>
+        <div class="time" id="dhaur-time">02:00</div>
+      </div>
+      <div class="asr">
+        <div class="name">العصر</div>
+        <div class="time" id="asr-time">02:00</div>
+      </div>
+      <div class="maghrib">
+        <div class="name">المغرب</div>
+        <div class="time" id="maghrib-time">02:00</div>
+      </div>
+      <div class="isha">
+        <div class="name">العشاء</div>
+        <div class="time" id="isha-time">02:00</div>
+      </div>
+    </div>
+    <select name="countries" id="countries">
+      <option value="الأسكندريه">الأسكندريه</option>
+      <option value="القاهره">القاهره</option>
+      <option value="البحر الاحمر">البحر الاحمر</option>
+      <option value="بورسعيد">بورسعيد</option>
+    </select>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

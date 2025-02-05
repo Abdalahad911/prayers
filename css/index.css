@@ -1,0 +1,76 @@
+html {
+  direction: rtl;
+}
+@font-face {
+  font-family: font;
+  src: url(../font/Janna\ LT\ Bold.ttf);
+}
+body {
+  margin: 0;
+  font-family: font;
+}
+* {
+  box-sizing: border-box;
+}
+.app-container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(45deg, #c1121f, #669bbc);
+}
+.country {
+  font-size: 90px;
+  padding: 0px 20px;
+  display: inline-block;
+  height: 160px;
+}
+
+.date {
+  border-bottom: 2px solid #c1121f;
+  padding: 10px 20px 5px;
+  font-size: 20px;
+}
+.Prayers {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 10px 30px;
+}
+.Prayers > div {
+  width: calc(100% / 6);
+}
+.name {
+  background-color: #780000;
+  color: white;
+  font-size: 30px;
+  height: 60px;
+  align-content: center;
+  padding-right: 5px;
+}
+.time {
+  background-color: #fdf0d5;
+  height: 150px;
+  max-height: 150px;
+  text-align: center;
+  align-content: center;
+  font-weight: bolder;
+  font-size: 30px;
+}
+select {
+  padding: 3px 4px;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 30px auto 0;
+  display: block;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 20px;
+  outline: none;
+}
+option {
+  background-color: #272626;
+  color: white;
+  border: 20px solid red;
+  padding: 0;
+  outline: none;
+  border-radius: 20px;
+}
