@@ -33,11 +33,17 @@ function getPrayersOfCity(cityName, countryName) {
     // city: countryName,
     // country: cityName
   };
-  axios
-    .get("https://api.aladhan.com/v1/calendarByCity", { params: params })
-    .then(response => {
-      let times = response.data.data[4];
-      console.log(response.data.data[4].date);
+  fetch(
+    `https://api.aladhan.com/v1/calendarByCity?country=${params.country}&city=${params.city}	`,
+    {
+      params: params
+    }
+  )
+    .then(response => response.json())
+    .then(data => {
+      console.log();
+      let times = data.data[4];
+      // console.log(data.data.data[4].date);
 
       let prayersDiv = Array.from(document.querySelector(".Prayers").children);
       console.log(prayersDiv[0].children);
